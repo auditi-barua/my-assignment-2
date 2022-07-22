@@ -44,13 +44,14 @@ h2{
     border-radius: 10px;
     text-decoration: none;
 }
+
 .subblogbtn{
     display: flex;
     flex-direction: column;
 }
 .mainblog{
     display: grid;
-    grid-template-columns: 220px auto;
+    grid-template-columns:220px auto;
     gap: 20px;
 }
 .subblogbtn{
@@ -67,11 +68,9 @@ h2{
     background-color: white !important;
     color: black;
 }
-.image{
-    padding-top: 80px;
-}
 .image img{
-    width: 100%;
+    width: 44%;
+    margin: auto;
 }
 .blog{
     display: grid;
@@ -82,20 +81,8 @@ h2{
     border: 1px solid gray;
     border-radius: 10px 10px 10px 10px;
 }
-.transfer{
-    text-decoration: none;
-    padding: 5px 10px;
-    border: 1px solid gray;
-    border-radius: 5px;
-}
 .blogtext{
-    padding: 20px;
-}
-.blogtext a{
-    color: black;
-}
-.blogtext  span{
-    color: gray;
+    padding: 25px;
 }
 footer{
     background-color: black;
@@ -123,75 +110,4 @@ footer h2{
 .footerlink .social-icon i{
     font-size: 30px;
     padding-right: 8px;
-}
-@media only screen and (max-width:1300px) {
-    .container{
-        width: 75%;
-    }
-    .headerflex{
-        width: 25%;
-    }
-    
-}
-@media only screen and (max-width:688px) {
-   .container{
-    width:75% ;
-    margin: auto;
-   }
-   .headerflex {
-    width: 25%;
-   }
-   .headtext{
-    font-size:2rem;
-    text-overflow: ellipsis;
-   }
-   .headtext p{
-    width: 10%;
-   }
-   .mainblog{
-    grid-template-columns: auto !important;
-    width: 80%;
-   }
-   .mainheader{
-    flex-direction: column !important;
-   }
-   .footerlink ul{
-    flex-direction: column !important;
-    width: 100%;
-    padding: 0;
-   }
-   .footerlink ul li{
-    padding: 10px;
-   }
-   .blog{
-    grid-template-columns: 1fr !important;
-   }
-   .subblogbtn{
-    flex-direction: row;
-    background: none;
-
-   }
-}
-@media  only screen and(min-width:992px){
-    .container{
-        width: 70%;
-        margin: auto;
-    }
-    .headerflex{
-        width: 25%;
-    }
-    .headerflex p{
-        justify-content: ellipsis;
-    }
-    .blogs{
-        grid-template-columns:500px, 1fr;
-    }
-    .mainblog{
-        grid-template-columns: auto;
-
-    }
-    .subblogbtn{
-        background: none;
-        flex-direction:row;
-    }
 }
